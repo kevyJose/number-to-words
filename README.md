@@ -14,7 +14,7 @@ This project is a lightweight Java-based web application that converts a numeric
 
 ## 🚀 Build & Run Instructions
 
-1. Clone the Repository\n
+1. Clone the Repository   
 First, clone the project (using HTTPS), to your local machine:
 
 ```
@@ -24,7 +24,7 @@ cd number-to-words-converter
 
 Replace the URL above with your actual GitHub repository URL.
 
-2. Ensure Java and Maven Are Installed
+2. Ensure Java and Maven Are Installed  
 Make sure both Java and Maven are installed and available in your system PATH.
 
 To check Java:
@@ -37,14 +37,14 @@ mvn -version
 ```
 If Maven is not recognized, you must install it from https://maven.apache.org/install.html and add it to your system’s environment variables.
 
-3. Build the Project
+3. Build the Project  
 From the root project directory, run the following command:
 ```
 mvn clean package
 ```
 This will compile the source code and generate a JAR file inside the target/ folder.
 
-4. Run the Server
+4. Run the Server  
 Use this command to launch the HTTP server:
 ```
 java -cp target/number-to-words-1.0-SNAPSHOT.jar com.numberwords.Main
@@ -53,7 +53,7 @@ You should see:
 
 Server started at http://localhost:8000
 
-5. Open the Web Interface
+5. Open the Web Interface  
 Open your web browser and go to:
 ```
 http://localhost:8000/
