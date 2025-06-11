@@ -14,8 +14,49 @@ This project is a lightweight Java-based web application that converts a numeric
 
 ## 🚀 Build & Run Instructions
 
-### 1. **Clone the Repository**
-```bash
+1. Clone the Repository
+First, clone the project to your local machine:
+
+```
 git clone https://github.com/your-username/number-to-words-converter.git
 cd number-to-words-converter
+```
+
+Replace the URL above with your actual GitHub repository URL.
+
+2. Ensure Java and Maven Are Installed
+Make sure both Java and Maven are installed and available in your system PATH.
+
+To check Java:
+
+java -version
+
+To check Maven:
+
+mvn -v
+
+If Maven is not recognized, you must install it from https://maven.apache.org/install.html and add it to your system’s environment variables.
+
+3. Build the Project
+From the root project directory, run the following command:
+
+mvn clean package
+
+This will compile the source code and generate a JAR file inside the target/ folder.
+
+4. Run the Server
+Use this command to launch the HTTP server:
+
+java -cp target/numberwords-1.0-SNAPSHOT.jar com.numberwords.Main
+
+You should see:
+
+Server started at http://localhost:8000
+
+5. Open the Web Interface
+Open your web browser and go to:
+
+http://localhost:8000/
+
+You will see a simple form where you can enter a number (for example, 101.25) and receive the result in words (e.g., ONE HUNDRED AND ONE DOLLARS AND TWENTY-FIVE CENTS).
 
