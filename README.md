@@ -60,3 +60,19 @@ http://localhost:8000/
 ```
 You will see a simple form where you can enter a number (for example, 101.25) and receive the result in words (e.g., ONE HUNDRED AND ONE DOLLARS AND TWENTY-FIVE CENTS).
 
+
+## 🧪 Input Guidelines  
+
+Valid input: Positive numbers with up to two decimal places  
+Invalid input: Negative numbers, letters, malformed decimals
+
+Examples:  
+| Input     | Output                                                   |
+|-----------|----------------------------------------------------------|
+| 0         | ZERO DOLLARS                                             |
+| 1         | ONE DOLLAR                                               |
+| 1.01      | ONE DOLLAR AND ONE CENT                                  |
+| 1050.99   | ONE THOUSAND AND FIFTY DOLLARS AND NINETY-NINE CENTS     |
+| abc       | INVALID INPUT                                            |
+
+
