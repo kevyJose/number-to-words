@@ -60,6 +60,7 @@ http://localhost:8000/
 ```
 You will see a simple form where you can enter a number (for example, 101.25) and receive the result in words (e.g., ONE HUNDRED AND ONE DOLLARS AND TWENTY-FIVE CENTS).
 
+---
 
 ## 🧪 Input Guidelines  
 
@@ -75,4 +76,12 @@ Examples:
 | 1050.99   | ONE THOUSAND AND FIFTY DOLLARS AND NINETY-NINE CENTS     |
 | abc       | INVALID INPUT                                            |
 
+---
+
+## 💡 Notes  
+* The application uses Java's built-in HttpServer, no external server frameworks.
+
+* Static files are served from src/main/resources/static.
+
+* CORS is enabled on the /convert endpoint to allow frontend interaction.
 
