@@ -15,10 +15,10 @@ This project is a lightweight Java-based web application that converts a numeric
 ## 🚀 Build & Run Instructions
 
 1. Clone the Repository
-First, clone the project to your local machine:
+First, clone the project (using HTTPS), to your local machine:
 
 ```
-git clone https://github.com/your-username/number-to-words-converter.git
+git clone https://github.com/kevyJose/number-to-words.git
 cd number-to-words-converter
 ```
 
