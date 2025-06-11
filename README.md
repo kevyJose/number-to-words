@@ -33,7 +33,7 @@ java -version
 ```
 To check Maven:
 ```
-mvn -v
+mvn -version
 ```
 If Maven is not recognized, you must install it from https://maven.apache.org/install.html and add it to your system’s environment variables.
 
