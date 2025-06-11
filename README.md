@@ -14,7 +14,7 @@ This project is a lightweight Java-based web application that converts a numeric
 
 ## 🚀 Build & Run Instructions
 
-1. Clone the Repository
+1. Clone the Repository\n
 First, clone the project (using HTTPS), to your local machine:
 
 ```
