@@ -83,8 +83,6 @@ Examples:
 
 * Static files are served from src/main/resources/static.
 
-* CORS is enabled on the /convert endpoint to allow frontend interaction.
-
 * Some test-cases have been created. They are written in ConvertControllerTest.java file.
 
 * There is a document in the root of this repo, that justifies my approach, titled "the-approach.md".
