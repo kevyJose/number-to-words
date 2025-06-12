@@ -1,7 +1,7 @@
 # Rationale for Implementation Approach: Number-to-Words Conversion
 
 ## Overview  
-The core objective of this project was to implement a custom algorithm that accurately converts a currency amount (e.g., 123.45) into its English words representation (e.g., "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS"). I developed the solution entirely from scratch without using any external libraries or packages, in alignment with the project constraints.
+The core objective of this project was to implement a custom algorithm that accurately converts a currency amount (e.g., 123.45) into its English words representation (e.g., "ONE HUNDRED AND TWENTY-THREE DOLLARS AND FORTY-FIVE CENTS"). I developed the solution without using any external libraries or packages, in alignment with the project constraints.
 
 ## Initial Approach: Character-Based Mapping
 At the outset, I attempted to solve the problem using multiple HashMap structures that mapped individual characters or digits ('1', '2', etc.) to their corresponding word forms ("ONE", "TWO", etc.). The idea was to iterate through the input string character by character and build the final result by piecing together the mapped values.
