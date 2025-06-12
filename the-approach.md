@@ -23,7 +23,7 @@ Recognising the limitations of the character-based method, I revised the approac
 
 * Implemented a recursive, rule-based number-to-words conversion algorithm, which divides the number into thousands, hundreds, tens, and units. This structure provided much greater control and clarity.
 
-* **Note:** this algorithm is designed to work for any decimal input value from 0 to 999,999. Any inputs outside of this range are invalid.
+* **NOTE:** this algorithm is designed to work for any decimal input value from 0 to 999,999. Any inputs outside of this range are invalid.
 
 This new approach yielded several advantages:
 
