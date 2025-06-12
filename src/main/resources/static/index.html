@@ -38,16 +38,28 @@
             padding: 10px;
             font-size: 1em;
             background-color: #0066cc;
+            width: 50%;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
 
+        .button-green {
+            background-color: #28a745;
+        }
+
+        .button-blue {
+            background-color: #0066cc;
+        }
+
+        .button-grey {
+            background-color: #6c757d;
+        }
+
         .output {
             margin-top: 20px;
             font-weight: bold;
-            color: #2e7d32;
         }
     </style>
 </head>
@@ -55,10 +67,14 @@
 <h1>Converter: Number to Words</h1>
 
 <form id="converter-form">
-    <label for="amount">Enter a numerical value (<i>e.g. 101.99</i>):</label>
+    <label for="amount">Enter a numerical value (<i>e.g. 101.25</i>):</label>
     <input type="text" id="amount" name="amount" required />
 
-    <button type="submit">Convert</button>
+    <div style="display: flex; gap: 10px;">
+        <button type="submit" class="button button-blue">Convert</button>
+        <button type="button" class="button button-grey" id="clear-button">Clear</button>
+    </div>
+
 </form>
 
 
@@ -78,6 +94,11 @@
             .catch(error => {
                 document.getElementById('result').innerText = "Error: " + error;
             });
+    });
+
+    document.getElementById('clear-button').addEventListener('click', function () {
+        document.getElementById('amount').value = '';
+        document.getElementById('result').innerText = '';
     });
 </script>
 </body>

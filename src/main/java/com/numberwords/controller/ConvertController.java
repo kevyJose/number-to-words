@@ -9,7 +9,8 @@ public class ConvertController {
         } catch (NumberFormatException e) {
             return "INVALID INPUT";
         }
-        if (amount < 0) return "INVALID INPUT";
+        if (amount < 0) return "Invalid Input! The value must be positive.";
+        if (amount >= 1000000) return "Invalid Input! The value is too large.";
 
         int dollars = (int) amount;
         int cents = (int) Math.round((amount - dollars) * 100);
@@ -22,9 +23,17 @@ public class ConvertController {
         }
 
         if (cents > 0) {
-            if (dollars > 0) result.append(" AND ");
-            result.append(numberToWords(cents)).append(" CENT");
-            if (cents != 1) result.append("S");
+            if (cents == 100) {
+                result = new StringBuilder();
+                dollars += 1;
+                result.append(numberToWords(dollars)).append(" DOLLAR");
+                if (dollars != 1) result.append("S");
+            }
+            else {
+                if (dollars > 0) result.append(" AND ");
+                result.append(numberToWords(cents)).append(" CENT");
+                if (cents != 1) result.append("S");
+            }
         }
 
         if (result.isEmpty()) {

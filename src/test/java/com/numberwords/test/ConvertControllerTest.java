@@ -16,9 +16,9 @@ public class ConvertControllerTest {
         runTest(converter, "1000", "ONE THOUSAND DOLLARS");
         runTest(converter, "1001", "ONE THOUSAND AND ONE DOLLARS");
         runTest(converter, "999999", "NINE HUNDRED AND NINETY-NINE THOUSAND NINE HUNDRED AND NINETY-NINE DOLLARS");
-        runTest(converter, "-1", "INVALID INPUT");
+        runTest(converter, "-1", "Invalid Input! The value must be positive.");
         runTest(converter, "abc", "INVALID INPUT");
-        runTest(converter, "1.999", "ONE DOLLAR AND NINETY-NINE CENTS"); // rounding cents
+        runTest(converter, "1.999", "TWO DOLLARS"); // rounding cents
         runTest(converter, "0.99", "NINETY-NINE CENTS");
     }
 
