@@ -87,5 +87,4 @@ Examples:
 
 * Some test-cases have been created. They are written in ConvertControllerTest.java file.
 
-* There is a document in the root of this repo, that justifies my approach.
-
+* There is a document in the root of this repo, that justifies my approach, titled "the-approach.md".
